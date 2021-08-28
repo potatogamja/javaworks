@@ -12,5 +12,9 @@ public class Book {
 	public void showInfo() {
 		System.out.println(bookName + ", " + author);
 	}
+	
+	public void setBookName(String bookName) {
+		this.bookName
+	}
 
 }
