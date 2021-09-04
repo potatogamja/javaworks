@@ -1,4 +1,4 @@
-package customers;
+package customermanage;
 
 public class Customer {
 	protected int customerId;

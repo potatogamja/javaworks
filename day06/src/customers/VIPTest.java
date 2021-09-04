@@ -3,8 +3,9 @@ package customers;
 public class VIPTest {
 
 	public static void main(String[] args) {
-		Customer c1 = new Customer();
-		VipCustomer vip1 = new VipCustomer();
+		//기본생성자로 인스턴스 생성하기
+		Customer c1 = new Customer();  //Customer 인스턴스 생성
+		VIPCustomer vip1 = new VIPCustomer();  //VIPCustomer 인스턴스 사용
 		
 		c1.setCustomerName("신사임당");
 		vip1.setCustomerName("이순신");
@@ -12,11 +13,13 @@ public class VIPTest {
 		
 		//보너스 포인트 계산
 		int price = 10000;
-		price = vip1.calcPrice(price);
+		c1.calcPrice(price);
+		int saledPrice = vip1.calcPrice(price); //할인된 가격
 		
 		//정보출력
 		System.out.println(c1.showInfo());
-		System.out.println("구매 가격은 " + price);
+		System.out.println(vip1.getCustomerName() + 
+				"님의 구매 가격은 " + saledPrice + "원입니다.");
 		System.out.println(vip1.showInfo());
 	}
 

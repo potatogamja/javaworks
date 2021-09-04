@@ -1,6 +1,6 @@
 package inherit;
 
-public class SuperSonicAirPlane extends Airplane{
+public class SuperSonicAirPlane extends AirPlane{
 	//초음속 비행기의 모드 - 일반모드, 초음속모드
 	static final int NORMAL = 1;
 	static final int SUPERSONIC = 2;
